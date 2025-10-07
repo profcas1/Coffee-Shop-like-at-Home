@@ -1,0 +1,169 @@
+/* Global color variables for easy theme changes */
+:root {
+  --colors-gold: #F5B32F;
+  --colors-bg: #1C1C1C;
+  --colors-ink: #1C1C1C;
+  --colors-text: #FFFFFF;
+}
+
+/* Global variables */
+:root {
+  --sizes-border: 0px;
+}
+
+/* Base styles */
+body {
+    /* SECTION | Text and Colors */
+    background-color: var(--colors-bg);
+    color: var(--colors-text);
+    font-family: 'Arimo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    /* font-family: 'Arimo', sans-serif; */
+
+    /* SECTION | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    border: green solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+
+    /* SECTION | Custom Styles */
+}
+
+/* ===== NAVBAR (cdc - component div class ===== */
+.cdc__navbar {
+    /* SECTION | Text and Colors */
+    background-color: var(--colors-gold);
+    font-size: 2rem;
+
+    /* SECTION | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    border: greenyellow solid var(--sizes-border);
+    padding: 15px 0px 15px 0px;
+
+    /* SECTION | Custom Styles - Center items and add spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    /* SECTION | Custom Styles */
+}
+
+.cdc__navbar a {
+    /* SECTION | Text and Colors */
+    color: var(--colors-ink);
+
+    /* SECTION | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    border: blue solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+
+    /* SECTION | Custom Styles - Links look like text buttons */
+    text-decoration: none;
+    font-weight: 400;
+    /* position: relative; */
+
+    /* SECTION | Custom Styles */    
+}
+
+
+.cdc__welcome_to_coffee_shop_like_at_home {
+
+    /* Section | Text and Colors */
+    /* Center text and limit line length for readability */
+    /* color: var(--colors-gold); */
+    text-align: center;
+
+    /* Section | Margin - Border - Padding - Max Width */
+    /* top right bottom left */
+    margin: 0 auto;
+    border: yellow solid var(--sizes-border);
+    padding: 40px 0px 20px 0px;
+    /* padding: 40px 0px 40px 0px; */
+    max-width: 1920px;
+
+    /* SECTION | Custom Styles */
+}
+
+.cdc__welcome_to_coffee_shop_like_at_home h1 {
+
+    /* Section | Text and Colors */
+    color: var(--colors-gold);
+    font-weight: 700;
+    font-size: clamp(2.2rem, 4.5vw, 3rem);
+
+    /* Section | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 28px 0px;
+    border: blue solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+
+    /* SECTION | Custom Styles */
+}
+
+.cdc__welcome_to_coffee_shop_like_at_home img {
+
+    /* Section | Text and Colors */
+    /* Section | Margin - Border - Padding - Max Width */
+    margin: 0 auto;
+    border: blueviolet solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+    width: 80%;
+    /* width: min(80%, 780px); */
+    height: auto;
+
+    /* SECTION | Custom Styles */
+    display: block;
+}
+
+.cdc__welcome_to_coffee_shop_like_at_home p {
+
+    /* Section | Text and Colors */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--colors-text);
+    /* color: #e6e6e6; */
+
+    /* Section | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    border: white solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+
+    /* SECTION | Custom Styles */
+}
+
+
+
+
+
+
+
+.cdc__footer {
+
+    /* Section | Text and Colors */
+    font-size: 2rem;
+
+    /* Section | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    background-color: var(--colors-gold);
+    padding: 15px 0px 15px 0px;
+
+    /* SECTION | Custom Styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cdc__footer a {
+
+    /* Section | Text and Colors */
+    text-decoration: none;
+    color: var(--colors-ink);
+    font-weight: 400;
+    /* position: relative; */
+
+    /* Section | Margin - Border - Padding - Max Width */
+    margin: 0px 0px 0px 0px;
+    border: orchid solid var(--sizes-border);
+    padding: 0px 0px 0px 0px;
+
+    /* SECTION | Custom Styles */
+}
