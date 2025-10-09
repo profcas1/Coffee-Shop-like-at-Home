@@ -1,0 +1,52 @@
+/* Global color variables for easy theme changes */
+:root {
+  /* --colors-gold: #F5B32F;
+  --colors-bg: #1C1C1C;
+  --colors-ink: #1C1C1C;
+  --colors-text: #FFFFFF; */
+
+  /* --bg:        var(--colors-6); */
+  --bg:        var(--colors-4);
+
+  /* --text:      var(--colors-1); */
+  --text:      var(--colors-1);
+
+  --surface:   var(--colors-5);
+  
+  --muted:     var(--colors-2);
+  --accent:    var(--colors-3);
+  --accent-2:  var(--colors-4);
+  --focus:     var(--colors-3);
+  --divider:   rgba(255,255,255,.12);
+
+
+
+
+
+    /* Level 1 - Color Names */
+
+    /* --colors-black: black; */
+    --colors-6: #1B1E18; /* near-black (bg) */
+    --colors-lvl-1-name-near-black: #1B1E18;
+    /* --colors-white: white; */
+    --colors-1: #FFFDFA; /* white/cream */
+    /* --colors-dark-grey: ?; */
+    --colors-5: #2F332D; /* dark grey (surface) */
+    /* --colors-light-grey: ?; */
+    --colors-2: #C4BEB5; /* light grey */
+    /* two additional */
+    --colors-3: #C1730E; /* ochre (accent) */
+    --colors-4: #4D693A; /* green (accent-2) */
+
+    /* Level 2 - X */
+
+    /* Level 3 - X */
+
+    --colors-lvl-3-component-navbar-text: var(--colors-6);
+
+}
+
+/* Global variables */
+:root {
+  --sizes-border: 0px;
+}
