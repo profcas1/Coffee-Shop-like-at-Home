@@ -6,31 +6,15 @@
   box-sizing: border-box;
 }
 
-/* Global color variables for easy theme changes */
-:root {
-  --colors-gold: #F5B32F;
-  --colors-bg: #1C1C1C;
-  --colors-ink: #1C1C1C;
-  --colors-text: #FFFFFF;
-
-  --colors-1: #FFFDFA;
-  --colors-2: #C4BEB5;
-  --colors-3: #C1730E;
-  --colors-4: #4D693A;
-  --colors-5: #2F332D;
-  --colors-6: #1B1E18;
-}
-
-/* Global variables */
-:root {
-  --sizes-border: 0px;
-}
-
 /* Base styles */
 body {
     /* SECTION | Text and Colors */
-    background-color: var(--colors-bg);
-    color: var(--colors-text);
+    /* background-color: var(--colors-bg); */
+    /* background: var(--accent); */
+    background: var(--bg);
+    /* color: var(--colors-text); */
+    /* color: var(--bg); */
+    color: var(--text);
     font-family: 'Arimo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     /* font-family: 'Arimo', sans-serif; */
 
@@ -42,10 +26,41 @@ body {
     /* SECTION | Custom Styles */
 }
 
+.cdc__hero{
+  width: min(1200px, 90vw);
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.cdc__hero img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.cdc__hero h1{
+  margin: 18px 0 6px;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  color: var(--text);
+}
+
+.cdc__hero p{
+  margin: 0 auto 18px;
+  max-width: 900px;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
 /* ===== NAVBAR (cdc - component div class ===== */
 .cdc__navbar {
     /* SECTION | Text and Colors */
-    background-color: var(--colors-gold);
+    /* background-color: var(--colors-gold); */
+    background: var(--accent);
+    /* color: var(--bg); */
+    color: var(--component);
     font-size: 2rem;
 
     /* SECTION | Margin - Border - Padding - Max Width */
@@ -94,7 +109,8 @@ body {
 }
 
 .cdc__navbar__brand {
-  color: var(--colors-ink);
+  /* color: var(--colors-ink); */
+  color: var(--bg);
   text-decoration: none;
   font-weight: 600;
   
@@ -124,7 +140,8 @@ body {
   transform: translateY(-50%);
   width: 1px;
   height: 1.2em;
-  background: var(--colors-ink);
+  /* background: var(--colors-ink); */
+  background: var(--bg);
   opacity: 0.6;
 }
 
@@ -201,6 +218,7 @@ body {
     /* Center text and limit line length for readability */
     /* color: var(--colors-gold); */
     text-align: center;
+    background-color: var(--colors-6);
 
     /* Section | Margin - Border - Padding - Max Width */
     /* top right bottom left */
@@ -216,7 +234,7 @@ body {
 .cdc__drinks_menu h1 {
 
     /* Section | Text and Colors */
-    color: var(--colors-gold);
+    /* color: var(--colors-gold); */
     font-weight: 700;
     font-size: clamp(2.2rem, 4.5vw, 3rem);
 
@@ -261,6 +279,7 @@ body {
 }
 
 .cdc__card {
+    background: var(--surface);
     flex: 1 1 calc(33.333% - 14px);
     max-width: calc(33.333% - 14px);
     display: flex;
@@ -281,10 +300,12 @@ body {
     width: 100%;
     margin: 0;
     font-size: 1.05rem;
-    color: var(--colors-1);
+    /* color: var(--colors-1); */
+    color: var(--text);
 }
 
 .cdc__card__caption {
+    color: var(--muted);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,6 +322,7 @@ body {
 }
 
 .cdc__price {
+    color: var(--accent);
     font-weight: 700;
     color: var(--colors-gold);
     letter-spacing: .3px;
@@ -326,6 +348,7 @@ body {
     /* Center text and limit line length for readability */
     /* color: var(--colors-gold); */
     text-align: center;
+    background-color: var(--colors-6);
 
     /* Section | Margin - Border - Padding - Max Width */
     /* top right bottom left */
@@ -341,7 +364,7 @@ body {
 .cdc__pastries_menu h1 {
 
     /* Section | Text and Colors */
-    color: var(--colors-gold);
+    color: var(--text);
     font-weight: 700;
     font-size: clamp(2.2rem, 4.5vw, 3rem);
 
@@ -358,15 +381,21 @@ body {
     /* Section | Text and Colors */
     font-size: 1rem;
     line-height: 1.6;
+    /* color: var(--colors-text); */
+    /* color: var(--text); */
     color: var(--colors-text);
     /* color: #e6e6e6; */
 
     /* Section | Margin - Border - Padding - Max Width */
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 28px 0px;
     border: white solid var(--sizes-border);
     padding: 0px 0px 0px 0px;
+    max-width: 900px;
 
     /* SECTION | Custom Styles */
+
+    /* SECTION | Extra Styles */
+    margin: 0 auto 28px;
 }
 
 
@@ -378,7 +407,9 @@ body {
 
     /* Section | Margin - Border - Padding - Max Width */
     margin: 40px 0px 0px 0px;
-    background-color: var(--colors-gold);
+    /* background-color: var(--colors-gold); */
+    background: var(--surface);
+    color: var(--text);
     padding: 15px 0px 15px 0px;
 
     /* SECTION | Custom Styles */
@@ -388,11 +419,15 @@ body {
     gap: 30px;
 }
 
+
+
+
 .cdc__footer a {
 
     /* Section | Text and Colors */
     text-decoration: none;
-    color: var(--colors-ink);
+    /* color: var(--colors-ink); */
+    color: var(--text);
     font-weight: 400;
     /* position: relative; */
 
@@ -402,4 +437,25 @@ body {
     padding: 0px 0px 0px 0px;
 
     /* SECTION | Custom Styles */
+}
+
+.cdc__footer a:hover {
+    color: var(--accent);
+}
+
+/* Links and availability */
+a{
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover{
+    color: var(--accent-2);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 6px;
 }
